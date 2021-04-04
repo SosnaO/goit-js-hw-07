@@ -30,7 +30,7 @@ const ImagesEl = images.map(element => {
 });
 console.log(...ImagesEl);
 
-galleryEl.insertAdjacentHTML(beforebegin,ImagesEl)
+galleryEl.insertAdjacentHTML(ImagesEl)
 //galleryEl.append(...ImagesEl);
 
 
