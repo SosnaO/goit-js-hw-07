@@ -17,31 +17,11 @@ const images = [
 ];
 
 
-const galleryEl = document.querySelector('gallery');
+const galleryEl = document.querySelector('#gallery');
+const ImagesEl = images.map(element =>
+  `<li><img src=${element.url} alt=${element.alt}</img></li>`);
 
-// const elements = images.map(option => { 
-//     return elements;
-// })
-// console.log(elements);
-
-
-const ImagesEl = images.map(element => {
-   return element;
-});
-console.log(...ImagesEl);
-
-galleryEl.insertAdjacentHTML(ImagesEl)
-//galleryEl.append(...ImagesEl);
-
-
-   //navItemEl.appendChild(navImageEl);
-
-
-// const navItemEl = document.createElement('li');
-// const navImageEl = document.createElement('img');
-// navItemEl.appendChild(navImageEl);
-
-// console.log(navItemEl);
+galleryEl.insertAdjacentHTML('afterbegin', ImagesEl)
 
 
 // Используй массив объектов images для создания тегов img вложенных в li.
@@ -50,6 +30,3 @@ galleryEl.insertAdjacentHTML(ImagesEl)
 // Все элементы галереи должны добавляться в DOM за одну операцию вставки.
 // Добавь минимальное оформление галереи флексбоксами или гридами через css-классы.
 
-
-
-//<ul id="gallery"></ul>
