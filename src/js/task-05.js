@@ -1,8 +1,8 @@
 const input = document.querySelector('#name-input');
 const output = document.querySelector('#name-output');
 
-input.addEventListener('input', onInputInput);
-function onInputInput(event){ 
+input.addEventListener('input', onInput);
+function onInput(event){ 
     output.textContent = event.currentTarget.value
     if (output.textContent==='') { 
         output.textContent = 'незнакомец';
