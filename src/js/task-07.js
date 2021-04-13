@@ -7,4 +7,4 @@ input.addEventListener('input', onInputSize)
 function onInputSize(event) {
     spanText.style.fontSize = `${event.currentTarget.value}px`;
 
-}
+};
